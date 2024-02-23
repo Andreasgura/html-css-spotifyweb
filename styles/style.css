@@ -1,0 +1,78 @@
+:root {
+	--color-primary: #000000;
+	--color-secondary: #141922;
+	--color-toolbar: #282828;
+}
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/*************************************************
+    GENERAL STYLES
+ *************************************************/
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* CONTENT */
+
+.content {
+    height: calc(100vh - 80px);
+    background-color: ;
+}
+
+/************************************************* 
+    SIDEBAR
+*************************************************/
+.sidebar {
+    width: 200px;
+    background-color: var(--color-primary);
+}
+
+/************************************************* 
+   MAIN CONTENT
+*************************************************/
+/* header */
+
+header {
+    background-color: rgba(0, 0, 0, 0.3); 
+    position:fixed;
+    z-index: 1001;
+    top: 0;
+    left: 200px;
+    width: calc(100% - 200px);
+    height: 70px;
+}
+/* main-content */
+.main-content {
+    width: calc(100% - 200px);
+    background-color: var(--color-secondary);
+    overflow-y: auto;
+}
+
+/************************************************** 
+    TOOLBAR 
+**************************************************/
+
+.toolbar {
+    background-color: var(--color-toolbar);
+    height: 80px;
+}

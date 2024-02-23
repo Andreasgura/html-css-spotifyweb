@@ -1,0 +1,46 @@
+/************************************************
+    UTILITIES
+ ************************************************/
+ .row {
+    display: flex;
+}
+.s-between {
+    justify-content:space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.items-start {
+    align-items: flex-start;
+}
+.baseline {
+    align-items: baseline;
+}
+.items-center {
+    align-items: center;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.j-center {
+    justify-content: center;
+    justify-items: center;
+}
+
+.j-end {
+    justify-content: flex-end;
+}
+.content-center {
+    align-content: center;
+}
+
+.column { 
+    flex-direction: column;
+}
+.gap-20 {
+    gap: 20px;
+}
