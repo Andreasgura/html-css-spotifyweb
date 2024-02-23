@@ -11,7 +11,9 @@
 .space-around {
     justify-content: space-around;
 }
-
+.justify-centre {
+    justify-content: center;
+}
 .items-start {
     align-items: flex-start;
 }
