@@ -83,7 +83,7 @@ header {
     width: calc(100% - 200px);
     background-color: var(--color-secondary);
     overflow-y: auto;
-    padding: 90px 20px 0px 20px;  
+    padding: 80px 20px 0px 20px;  
 }
 
 /* navbar */
@@ -92,6 +92,61 @@ nav a {
     text-transform: uppercase;
     padding-right: 10px;
     
+}
+
+/* section recently-played */
+
+#recently-played h2 {
+    padding-bottom: 30px ;
+}
+.card {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.card div {
+    max-width: 160px;
+}
+
+img {
+    width: 90%;
+    object-fit: contain;
+    padding-bottom: 20px;
+    display: block;
+}
+
+.card h4 {
+    margin-bottom: 15px;
+}
+
+/* SECTION CREATO PER */
+
+#creato-per h2 {
+    padding: 20px 0px;
+}
+
+#creato-per h3 {
+    padding-bottom: 40px;
+}
+
+/* SECTION PIù POPOLARI */
+
+#più-popolari .card>div {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#più-popolari img {
+    width: 100%;
+}
+
+#più-popolari h2 {
+    padding: 20px 0px;
+}
+
+#più-popolari h3 {
+    padding-bottom: 40px;
 }
 
 /************************************************** 

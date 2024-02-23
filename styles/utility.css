@@ -43,6 +43,17 @@
 .column { 
     flex-direction: column;
 }
+.wrap {
+    flex-wrap: wrap;
+}
+.no-shrink {
+    flex-shrink: 0;
+}
+
 .gap-20 {
     gap: 20px;
+}
+
+.debug {
+    border: 1px solid red;
 }
