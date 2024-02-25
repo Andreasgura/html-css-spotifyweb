@@ -55,6 +55,7 @@ body {
     width: 200px;
     background-color: var(--color-primary);
     padding-left: 10px;
+    position: relative;
 }
 #logo {
     padding: 20px 0;
@@ -81,7 +82,24 @@ body {
 .playlist li {
     padding-bottom: 15px;
 }
-
+.sidebar-footer {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+}
+.sidebar hr {
+    color: var(--color-text-secondary);
+}
+.sidebar-footer a div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: lightgray;
+}
+.sidebar-footer a div img {
+    object-fit: cover;
+    width: 25px;
+}
 /*************************************************
    MAIN CONTENT
 *************************************************/
