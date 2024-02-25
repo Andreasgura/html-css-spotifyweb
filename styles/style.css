@@ -221,6 +221,35 @@ nav a {
 .toolbar {
     background-color: var(--color-toolbar);
     height: 80px;
+    padding: 0px 10px;
+}
+
+.toolbar .right.row img {
+    width: 40px;
+    padding-right: 10px;
+}
+.toolbar .right.row :nth-child(2) {
+    margin-right: 15px;
+}
+
+.toolbar .right.row div i {
+    padding: 0px 10px;
+}
+
+.toolbar .center {
+    align-self: flex-start;
+    padding-top: 10px;
+}
+.toolbar .center i {
+    font-size: 2em;
+    padding: 10px;
+    color: white;
+}
+.toolbar .center i.fa-regular.fa-circle-play {
+    font-size: 3em;
+}
+.toolbar .play {
+    padding: 0 10px;
 }
 
 
@@ -254,6 +283,9 @@ nav a {
 /* MEDIA QUERY 576 */
 
 @media screen and (max-width: 576px) {
+    .main-content {
+        width: calc(100% - 50px);
+    }
     #logo :first-child,
     .sidebar span,
     .sidebar-footer span,
