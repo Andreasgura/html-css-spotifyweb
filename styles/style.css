@@ -24,6 +24,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 /*************************************************
     GENERAL STYLES
  *************************************************/
@@ -55,10 +56,9 @@ body {
     width: 200px;
     background-color: var(--color-primary);
     padding-left: 10px;
-    position: relative;
 }
 #logo {
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 #logo :first-child {
@@ -79,18 +79,30 @@ body {
     gap: 5px;
     padding-bottom: 5px;
 }
+.sidebar a:hover {
+    color: white;
+}
 .sidebar h3 {
     text-transform: uppercase;
     padding: 10px 0;
 }
+.fa-square-plus {
+    font-size: 2em;
+}
+.hidden-sidebar {
+    min-height: 30px;
+}
+.playlist {
+    height: 100%;
+    overflow-y:auto;
+}
 .playlist li {
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
-.sidebar-footer {
-    position: absolute;
-    bottom: 0px;
-    left: 10px;
-}
+/* .sidebar-footer {
+    justify-self: flex-end;
+} */
+
 .sidebar hr {
     color: var(--color-text-secondary);
     width: 180px;
