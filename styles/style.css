@@ -27,6 +27,23 @@ html {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background:#beff31cd;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-highlight)
+}
 
 /*************************************************
     GENERAL STYLES
@@ -178,7 +195,7 @@ header {
     z-index: 1001;
     top: 0;
     left: 200px;
-    width: calc(100% - 200px);
+    width: calc(100% - 210px);
     height: 70px;
 }
 
@@ -337,11 +354,16 @@ nav li:hover a {
 .toolbar .right.row,
 .toolbar .left.right.row {
     width: 15%;
+    background-color: var(--color-toolbar);
 }
 
 .toolbar .right img {
-    width: 40px;
+    width: 70px;
     padding-right: 10px;
+}
+.toolbar .right.row small:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .toolbar .right :nth-child(2) {
@@ -355,6 +377,7 @@ nav li:hover a {
 /* .toolbar .center*/
 .toolbar .center {
     width: 70%;
+    background-color: var(--color-toolbar);
 }
 
 .toolbar .center i {
@@ -375,35 +398,22 @@ nav li:hover a {
     width: 60%;
 }
 .center .slider {
-    -webkit-appearance: none;
+    appearance: none;
     width: 100%;
     height: 5px;
     border-radius: 5px;
     outline: none;
     opacity: 0.7;
-    -webkit-transition: .2s;
+    transition: .2s;
     transition: opacity .2s;
   }
-  /* .slider::-webkit-slider-thumb {
-    display: none;
-  } */
-  .slider:hover {
+
+.slider:hover {
     opacity: 1;
-    cursor: pointer;
-  }
-  .slider:hover .slider::-webkit-slider-thumb {
-    display: ;
-  }
-  .slider::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
-    background: #04AA6D;
     cursor: pointer;
   }
 
 .left .slidecontainer {
-    /* width: 50%;
-    min-width: 20px; */
     padding-bottom: 5px;
 
 }
@@ -488,4 +498,19 @@ nav li:hover a {
         width: 30px;
     }
 
+}
+
+/* * MEDIA*/ 
+
+@media screen and (max-height: 160px) {
+    header,
+    .content.row,
+    .slidecontainer {
+        display: none;
+    }
+     
+    .toolbar {
+        height: 100vh;
+        
+    }
 }
