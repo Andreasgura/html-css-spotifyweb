@@ -1,9 +1,10 @@
 :root {
-	--color-primary: #000000;
-	--color-secondary: #141922;
-	--color-toolbar: #282828;
+    --color-primary: #000000;
+    --color-secondary: #141922;
+    --color-toolbar: #282828;
     --color-text-secondary: #A3A3A3;
 }
+
 /* reset */
 
 * {
@@ -20,6 +21,7 @@ a {
     text-decoration: none;
     color: var(--color-text-secondary)
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -56,7 +58,21 @@ body {
     width: 200px;
     background-color: var(--color-primary);
     padding-left: 10px;
+    height: 100%;
+    position: relative;
 }
+.sidebar-main {
+    height: calc(100% - 80px);
+    /* min-height: 50px; */
+}
+.sidebar-footer {
+    height: 80px;
+    background-color: var(--color-primary);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
 #logo {
     padding: 10px 0;
 }
@@ -64,10 +80,12 @@ body {
 #logo :first-child {
     width: 130px;
 }
+
 .sidebar img,
 #logo :last-child {
     width: 25px;
 }
+
 #logo :last-child {
     display: none;
 }
@@ -79,34 +97,38 @@ body {
     gap: 5px;
     padding-bottom: 5px;
 }
+
 .sidebar a:hover {
     color: white;
 }
+
 .sidebar h3 {
     text-transform: uppercase;
     padding: 10px 0;
 }
+
 .fa-square-plus {
     font-size: 2em;
 }
+
 .hidden-sidebar {
     min-height: 30px;
 }
+
 .playlist {
     height: 100%;
-    overflow-y:auto;
+    overflow-y: auto;
 }
+
 .playlist li {
     padding-bottom: 5px;
 }
-/* .sidebar-footer {
-    justify-self: flex-end;
-} */
 
 .sidebar hr {
     color: var(--color-text-secondary);
     width: 180px;
 }
+
 .sidebar-footer a div {
     display: flex;
     justify-content: center;
@@ -118,6 +140,7 @@ body {
     overflow: hidden;
     margin-top: 10px;
 }
+
 .sidebar .sidebar-footer a div img {
     object-fit: cover;
 }
@@ -134,6 +157,7 @@ body {
     overflow-y: auto;
     padding: 80px 20px 0px 20px;
 }
+
 .main-content img {
     width: 95%;
     max-width: 190px;
@@ -146,13 +170,14 @@ body {
 
 header {
     background-color: rgba(0, 0, 0, 0.3);
-    position:fixed;
+    position: fixed;
     z-index: 1001;
     top: 0;
     left: 200px;
     width: calc(100% - 200px);
     height: 70px;
 }
+
 .btn {
     text-transform: uppercase;
     display: inline-block;
@@ -177,13 +202,16 @@ nav a {
 #recently-played .container {
     justify-content: space-between;
 }
+
 #recently-played h2 {
-    padding-bottom: 30px ;
+    padding-bottom: 30px;
 }
+
 .card {
     text-align: center;
     width: calc(100% / 6);
 }
+
 .card:hover .cover-image:after {
     content: "\f144";
     font-family: "Font Awesome 6 Free";
@@ -199,12 +227,14 @@ nav a {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    
+
 }
-.cover-image { 
+
+.cover-image {
     position: relative;
 
 }
+
 #prova {
     background-color: rgba(0, 0, 0, 0.5);
     width: 95%;
@@ -222,6 +252,7 @@ nav a {
 #recently-played img {
     width: 95%;
 }
+
 .card h4 {
     margin-bottom: 15px;
     width: 100%;
@@ -249,7 +280,7 @@ nav a {
 
 #più-popolari div {
     margin-right: 5px;
-  }
+}
 
 #più-popolari img {
     width: 100%;
@@ -263,6 +294,7 @@ nav a {
 #più-popolari h3 {
     padding-bottom: 40px;
 }
+
 #più-popolari .card div {
     margin-bottom: 15px;
 }
@@ -276,15 +308,17 @@ nav a {
     height: 80px;
     padding: 0px 10px;
 }
- .right.row,
- .left.row {
+
+.right.row,
+.left.row {
     width: 90px;
- }
+}
 
 .toolbar .right.row img {
     width: 40px;
     padding-right: 10px;
 }
+
 .toolbar .right.row :nth-child(2) {
     margin-right: 15px;
 }
@@ -297,14 +331,17 @@ nav a {
     align-self: flex-start;
     padding-top: 10px;
 }
+
 .toolbar .center i {
     font-size: 2em;
     padding: 10px;
     color: white;
 }
+
 .toolbar .center i.fa-regular.fa-circle-play {
     font-size: 3em;
 }
+
 .toolbar .play {
     padding: 0 10px;
 }
@@ -321,9 +358,11 @@ nav a {
     .container {
         flex-wrap: wrap;
     }
+
     .card {
         width: calc(100% / 4);
     }
+
     #recently-played .container {
         justify-content: flex-start;
     }
@@ -335,9 +374,11 @@ nav a {
     .card {
         width: calc(100% / 2);
     }
+
     #più-popolari .card {
         margin: 0 auto;
     }
+
     .flex768 {
         flex-direction: column;
     }
@@ -349,7 +390,7 @@ nav a {
     .main-content {
         width: calc(100% - 50px);
     }
-    
+
     header {
         left: 50px;
     }
@@ -361,15 +402,17 @@ nav a {
     .sidebar hr {
         display: none;
     }
+
     #logo :last-child {
         display: block;
     }
+
     .sidebar {
         width: 50px;
     }
+
     .sidebar hr {
         width: 30px;
     }
 
 }
-
