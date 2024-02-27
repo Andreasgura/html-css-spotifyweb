@@ -16,14 +16,14 @@
         
         <div class="content row">
             <!-- sidebar -->
-            <div class="sidebar">
-                <div class="sidebar-main">
+            <div class="sidebar column">
+                <div class="sidebar-main column">
                     <div id="logo">
                         <img src="./img/logo.svg" alt="logo">
                         <img src="./img/logo-small.svg" alt="logo-small">
                     </div>
                     <ul>
-                        <li><a href="#"><img src="./img/home.svg" alt=""><span>Home</span></a></li>
+                        <li><a class="active" href="#"><img src="./img/home.svg" alt=""><span>Home</span></a></li>
                         <li><a href="#"><img src="./img/search.svg" alt=""><span>Cerca</span></a></li>
                         <li><a href="#"><img src="./img/libreria.svg" alt=""><span>La tua libreria</span></a></li>
                     </ul>
@@ -60,12 +60,29 @@
                 <!-- navbar -->
                 <nav>
                     <ul class="row justify-centre wrap">
-                        <li><a href="#">in evidenza</a></li>
-                        <li><a href="#">podcast</a></li>
-                        <li><a href="#">classifiche</a></li>
-                        <li><a href="#">generi e mood</a></li>
-                        <li><a href="#">nuove uscite</a></li>
-                        <li><a href="#">scopri</a></li>
+                        <li><a href="#">in evidenza</a>
+                            <div class="active green-highlight"></div>
+                        </li>
+                        <li>
+                            <a href="#">podcast</a>
+                            <div class="green-highlight"></div>
+                        </li>
+                        <li>
+                            <a href="#">classifiche</a>
+                            <div class="green-highlight"></div>
+                        </li>
+                        <li>
+                            <a href="#">generi e mood</a>
+                            <div class="green-highlight"></div>
+                        </li>
+                        <li>
+                            <a href="#">nuove uscite</a>
+                            <div class="green-highlight"></div>
+                        </li>
+                        <li>
+                            <a href="#">scopri</a>
+                            <div class="green-highlight"></div>
+                        </li>
                     </ul>
                 </nav>
                 <!-- section recently-played -->
@@ -151,7 +168,7 @@
             </div>
         </div>
         <!-- toolbar -->
-        <div class="toolbar row s-between items-center">
+        <div class="toolbar row">
             <div class="right row items-center">
                 <div><img src="./img/sinister.jpeg" alt="sinister"></div>
                 <div>
@@ -162,7 +179,7 @@
                     <div><i class="fa-regular fa-folder"></i></div>
                 </div>
             </div>
-            <div class="center">
+            <div class="center column items-center justify-centre">
                 <ul class="row items-center">
                     <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
                     <li><a href="#"><i class="fa-solid fa-backward-step"></i></a></li>
@@ -170,12 +187,17 @@
                     <li><a href="#"><i class="fa-solid fa-forward-step"></i></a></li>
                     <li><a href="#"></a><i class="fa-solid fa-arrow-rotate-right"></i></li>
                 </ul>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="30" class="slider" id="myRange">
+                </div>
             </div>
-            <div class="left row">
+            <div class="left row items-center gap-10">
                 <div><i class="fa-solid fa-bars"></i></div>
                 <div><i class="fa-solid fa-tv"></i></div>
                 <div><i class="fa-solid fa-volume-high"></i></div>
-                <div></div>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="30" class="slider" id="myRange">
+                </div>
             </div>
         </div>
     </div>
